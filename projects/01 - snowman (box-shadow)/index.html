@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snowman (box-shadow)</title>
+
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    .snowman {
+      width: 10px;
+      height: 10px;
+      margin: 200px auto 0;
+      border-radius: 50%;
+      background-color: black;
+
+      box-shadow:
+
+        30px 0,
+
+        15px 25px orange,
+
+        1px 45px 0 -03px,
+        7px 50px 0 -03px,
+        15px 51px 0 -03px,
+        23px 50px 0 -03px,
+        29px 45px 0 -03px,
+
+        15px 110px 0 2px,
+        15px 140px 0 2px,
+        15px 170px 0 2px,
+
+        15px 30px 0 50px white,
+        15px 30px 10px 50px black,
+
+        15px 150px 0 80px white,
+        15px 150px 10px 80px black,
+
+        0 700px 0 500px rgb(131, 86, 45);
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div class="snowman"></div>
 </body>
+
 </html>
