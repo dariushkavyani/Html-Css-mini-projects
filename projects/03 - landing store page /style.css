@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "lalezar";
+  src: url("fonts/lalezar.woff") format("woff"),
+    url("fonts/lalezar.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "byekan";
+  src: url("fonts/Byekan.woff") format("woff"),
+    url("fonts/Byekan.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "byekan";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#header {
+  height: 550px;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-list .nav-item {
+  display: inline-block;
+}
+
+.nav-list .nav-item a {
+  padding: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-list .nav-item a:hover {
+  color: orange;
+}
+
+#header .title {
+  font-family: lalezar;
+  margin-top: 90px;
+  font-size: 60px
+}
+
+.title span {
+  color: orange;
+  font-family: inherit;
+}
+
+.dsec {
+  margin: auto;
+  margin-top: 35px;
+  width: 450px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#members {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.member-list {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.member-item {
+  width: 350px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 0 10px #bbbbbb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.member-pic {
+  width: 100%;
+}
+
+.member-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.memeber-bio {
+  padding: 20px;
+  text-align: justify;
+}
+
+
+#about {
+  height: 700px;
+  background-size: cover;
+  background-image: url("images/bg.jpg");
+  background-color: rgb(60, 60, 60);
+  background-blend-mode: multiply;
+  padding-top: 60px;
+}
+
+.circle {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(135, 135, 135, 0.5);
+  color: white;
+  margin: auto;
+  padding: 100px 120px;
+}
+
+.circle h2 {
+  font-size: 45px;
+}
+
+.circle p {
+  margin-top: 60px;
+  text-align: justify;
+}
+
+#footer {
+  background-color: lightgray;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.icons {
+  background-color: gray;
+}
+
+.icons img {
+  width: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.footer p{
+  padding: 20px;
+}
