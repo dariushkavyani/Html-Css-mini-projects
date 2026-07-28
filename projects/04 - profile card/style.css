@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 600px;
+  height: 300px;
+  background-color: lightgray;
+  margin: 100px auto;
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background-color: red;
+}
+
+.right {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  background-color: rgb(140, 228, 39);
+  right: 0;
+}
