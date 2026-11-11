@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارت پروفایل</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- font awesome icons cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+	* {
+      box-sizing: border-box;
+	    margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+      color: #252525;
+      font-family: "Vazirmatn", sans-serif;
+    }
+
+    .profile-card {
+      width: 300px;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 19px;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.13);
+      text-align: center;
+    }
+
+    .card-cover {
+      height: 116px;
+      background: #416fe8;
+      position: relative;
+    }
+
+    .profile-image {
+      position: absolute;
+      left: 50%;
+      bottom: -38px;
+      transform: translateX(-50%);
+      width: 112px;
+      height: 112px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background: #e7e7e7;
+    }
+
+    .card-content {
+      padding: 43px 22px 20px;
+    }
+
+    .profile-name {
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .profile-description {
+      margin: 1px 0 14px;
+      color: #858585;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 13px;
+      margin: 0 0 20px;
+      direction: ltr;
+    }
+
+    .social-link {
+      width: 27px;
+      height: 27px;
+      display: inline-grid;
+      place-items: center;
+      color: #fff;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 13px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-3px);
+      opacity: .85;
+    }
+
+    .facebook { background: #4267a9; }
+    .twitter  { background: #29a8df; }
+    .instagram { background: #d72d70; }
+    .youtube { background: #e51e25; }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .action-button {
+      min-width: 94px;
+      padding: 7px 15px;
+      border: 0;
+      border-radius: 22px;
+      background: #416fe8;
+      color: #fff;
+      font: 500 12px "Vazirmatn", sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .action-button:hover {
+      background: #3562d8;
+      transform: translateY(-2px);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      direction: rtl;
+      color: #777;
+    }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-width: 75px;
+      padding: 0 11px;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .stat + .stat {
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .stat i {
+      font-size: 11px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="card-cover">
+      <img class="profile-image" src="https://avatars.githubusercontent.com/u/264465525?v=4">
+    </div>
+
+    <section class="card-content">
+      <h1 class="profile-name">داریوش</h1>
+      <p class="profile-description">توسعه دهنده وب و گیک</p>
+
+      <nav class="social-links">
+        <a class="social-link facebook" href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="social-link twitter" href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="social-link instagram" href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="social-link youtube" href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </nav>
+
+      <div class="actions">
+        <a class="action-button" href="#">دنبال کردن</a>
+        <a class="action-button" href="#">پیام دادن</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <i class="fa-regular fa-heart"></i>
+          <span>۶۰ هزار</span>
+        </div>
+        <div class="stat">
+          <i class="fa-regular fa-comment"></i>
+          <span>۲۰ هزار</span>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-share"></i>
+          <span>۱۲ هزار</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
